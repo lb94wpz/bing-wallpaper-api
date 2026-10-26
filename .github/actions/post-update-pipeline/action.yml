@@ -69,8 +69,8 @@ runs:
       shell: bash
       run: |
         cd bing-wallpaper
-        git config --local user.email "1982989137@qq.com"
-        git config --local user.name "flow2000"
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
         git add static/sitemap.xml
         if git diff --staged --quiet; then
           echo 'no commit'

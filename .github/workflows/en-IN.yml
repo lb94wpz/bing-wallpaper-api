@@ -66,13 +66,13 @@ jobs:
          done
          exit 1
 
-     - name: 生成站点地图并部署
-       # 复用公共管线：生成 sitemap → 提交站点仓库 → SEO 收录提交 → Cloudflare 部署
-       uses: ./.github/actions/post-update-pipeline
-       with:
-        region: en-IN
-        frontend_token: ${{ secrets.FRONTEND_REPO_TOKEN }}
-        cf_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        cf_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        baidu_token: ${{ secrets.BAIDU_TOKEN }}
-        indexnow_key: ${{ secrets.INDEXNOW_KEY }}
+    #  - name: 生成站点地图并部署
+    #    # 复用公共管线：生成 sitemap → 提交站点仓库 → SEO 收录提交 → Cloudflare 部署
+    #    uses: ./.github/actions/post-update-pipeline
+    #    with:
+    #     region: en-IN
+    #     frontend_token: ${{ secrets.FRONTEND_REPO_TOKEN }}
+    #     cf_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    #     cf_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    #     baidu_token: ${{ secrets.BAIDU_TOKEN }}
+    #     indexnow_key: ${{ secrets.INDEXNOW_KEY }}

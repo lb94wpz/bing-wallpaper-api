@@ -16,8 +16,8 @@ if git diff --quiet -- $PATTERN; then
   exit 0
 fi
 
-git config --local user.email "1982989137@qq.com"
-git config --local user.name "flow2000"
+git config --local user.email "action@github.com"
+git config --local user.name "GitHub Action"
 
 # 多个分地区工作流可能同时推送 master：先暂存本地变更，与远端 rebase 对齐后再恢复，避免 non-fast-forward
 git stash push -m "bing-json-tmp" -- $PATTERN
